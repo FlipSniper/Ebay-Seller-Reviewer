@@ -20,7 +20,7 @@ def safe_print(*args, **kwargs):
         print(*(str(a).encode(enc, errors='replace').decode(enc) for a in args), **kwargs, file=sys.stdout, flush=True)
 
 # -------- Setup Edge Options --------
-edge_driver_path = r"C:/Users/Swank/Downloads/edgedriver_win64/msedgedriver.exe"
+edge_driver_path = r"msedgedriver.exe"
 
 def create_driver(headless=True):
     options = Options()
